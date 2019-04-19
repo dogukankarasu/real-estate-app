@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="726.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.user_control">
+   <children>
+      <Label fx:id="lbl_user" layoutX="193.0" layoutY="17.0" prefHeight="37.0" prefWidth="352.0" text="Label" textFill="#801b1b">
+         <font>
+            <Font name="Dubai Regular" size="24.0" />
+         </font></Label>
+      <Button fx:id="bck4_btn" layoutX="14.0" layoutY="20.0" mnemonicParsing="false" onAction="#back2" prefHeight="31.0" prefWidth="140.0" text="Go To Main Menu" />
+      <Button fx:id="prfl_btn" layoutX="34.0" layoutY="70.0" mnemonicParsing="false" onAction="#ShowMyInformation" prefHeight="31.0" prefWidth="140.0" text="My Profile" />
+      <Button fx:id="ntc_btn" layoutX="222.0" layoutY="70.0" mnemonicParsing="false" onAction="#nextUser" prefHeight="31.0" prefWidth="140.0" text="My Notice" />
+      <Button fx:id="dltact_btn" layoutX="422.0" layoutY="70.0" mnemonicParsing="false" onAction="#DeleteAccount" prefHeight="31.0" prefWidth="140.0" text="Delete Account" />
+      <TableView fx:id="TableProfile" layoutX="34.0" layoutY="123.0" prefHeight="248.0" prefWidth="686.0">
+        <columns>
+          <TableColumn fx:id="user_id" prefWidth="75.0" text="ID" />
+          <TableColumn fx:id="name" prefWidth="75.0" text="NAME" />
+            <TableColumn fx:id="surname" prefWidth="88.0" text="SURNAME" />
+            <TableColumn fx:id="username" prefWidth="97.0" text="USERNAME" />
+            <TableColumn fx:id="password" prefWidth="92.0" text="PASSWORD" />
+            <TableColumn fx:id="email" prefWidth="112.0" text="E-MAIL" />
+            <TableColumn fx:id="phone_number" prefWidth="146.0" text="PHONE" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

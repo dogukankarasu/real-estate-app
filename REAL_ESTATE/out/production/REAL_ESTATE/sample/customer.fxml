@@ -1,32 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
-<?import javafx.scene.effect.Light.Distant?>
-<?import javafx.scene.effect.Lighting?>
-<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+<AnchorPane prefHeight="618.0" prefWidth="849.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.customer_controller">
    <children>
-      <Button fx:id="bck_btn" layoutX="19.0" layoutY="20.0" mnemonicParsing="false" onAction="#back" prefHeight="20.0" prefWidth="135.0" text="Go To Main Menu" />
-      <Button layoutX="178.0" layoutY="20.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="110.0" text="show all " />
-      <TableView layoutX="12.0" layoutY="77.0" prefHeight="303.0" prefWidth="577.0">
+      <Button fx:id="bck_btn" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#back" prefHeight="31.0" prefWidth="140.0" text="Go To Main Menu" />
+      <Button fx:id="btn_show" layoutX="184.0" layoutY="14.0" mnemonicParsing="false" onAction="#ShowAllEstate" prefHeight="31.0" prefWidth="130.0" text="show all " />
+      <TableView fx:id="TableProfile3" layoutX="166.0" layoutY="96.0" prefHeight="253.0" prefWidth="669.0">
         <columns>
-          <TableColumn prefWidth="75.0" text="C1" />
-          <TableColumn prefWidth="75.0" text="C2" />
+          <TableColumn fx:id="username" prefWidth="145.0" text="ESTATE USERNAME" />
+          <TableColumn minWidth="0.0" prefWidth="0.0" text="C2" />
+            <TableColumn fx:id="estate_id" prefWidth="88.0" text="ESTATE ID" />
+            <TableColumn fx:id="category" prefWidth="85.0" text="CATEGORY" />
+            <TableColumn fx:id="type" prefWidth="55.0" text="TYPE" />
+            <TableColumn fx:id="adress" prefWidth="83.0" text="ADRESS" />
+            <TableColumn fx:id="price" prefWidth="63.0" text="PRICE" />
+            <TableColumn fx:id="num_of_rooms" minWidth="0.0" prefWidth="72.0" text="ROOM" />
+            <TableColumn fx:id="size" prefWidth="75.0" text="SIZE" />
         </columns>
       </TableView>
+      <Button fx:id="btn_filter" layoutX="17.0" layoutY="309.0" mnemonicParsing="false" onAction="#FilterEstate" prefHeight="31.0" prefWidth="104.0" text="FILTER" />
+      <TextField fx:id="txt_adr" layoutX="12.0" layoutY="204.0" prefHeight="31.0" prefWidth="140.0" />
+      <Label layoutX="12.0" layoutY="169.0" prefHeight="21.0" prefWidth="91.0" text="Adress" />
+      <Label layoutX="12.0" layoutY="235.0" prefHeight="21.0" prefWidth="76.0" text="Estate Type" />
+      <TextField fx:id="txt_typ" layoutX="12.0" layoutY="266.0" prefHeight="31.0" prefWidth="140.0" />
+      <TextField fx:id="txt_ctg" layoutX="12.0" layoutY="138.0" prefHeight="31.0" prefWidth="140.0" />
+      <Label layoutX="12.0" layoutY="105.0" prefHeight="21.0" prefWidth="76.0" text="CATEGORY" />
+      <TextField fx:id="txt_info_estate" layoutX="17.0" layoutY="397.0" prefHeight="31.0" prefWidth="140.0" />
+      <Button fx:id="btn_shw" layoutX="25.0" layoutY="446.0" mnemonicParsing="false" onAction="#ShowEstateInfo" text="show" />
+      <TableView fx:id="TableProfile5" disable="true" layoutX="196.0" layoutY="390.0" prefHeight="175.0" prefWidth="474.0">
+        <columns>
+            <TableColumn fx:id="username3" prefWidth="97.0" text="USERNAME" />
+          <TableColumn fx:id="name3" prefWidth="81.0" text="NAME" />
+          <TableColumn fx:id="surname3" prefWidth="98.0" text="SURNAME" />
+            <TableColumn fx:id="phone_number3" prefWidth="87.0" text="PHONE" />
+            <TableColumn fx:id="email3" prefWidth="110.0" text="EMAIL" />
+        </columns>
+      </TableView>
+
+
    </children>
-   <effect>
-      <Lighting>
-         <bumpInput>
-            <Shadow />
-         </bumpInput>
-         <light>
-            <Light.Distant />
-         </light>
-      </Lighting>
-   </effect>
+
 </AnchorPane>

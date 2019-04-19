@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="435.0" prefWidth="718.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.notice_controller">
+   <children>
+      <TableView fx:id="TableProfile2" layoutX="14.0" layoutY="94.0" prefHeight="153.0" prefWidth="681.0">
+        <columns>
+          <TableColumn fx:id="username" prefWidth="93.0" text="USERNAME" />
+          <TableColumn fx:id="estate_id" prefWidth="94.0" text="ESTATE ID" />
+            <TableColumn fx:id="category" prefWidth="112.0" text="CATEGORY" />
+            <TableColumn fx:id="type" prefWidth="95.0" text="TYPE" />
+            <TableColumn fx:id="adress" prefWidth="107.0" text="ADRESS" />
+            <TableColumn fx:id="price" prefWidth="56.0" text="PRICE" />
+            <TableColumn fx:id="num_of_rooms" prefWidth="59.0" text="ROOM" />
+            <TableColumn fx:id="size" prefWidth="61.0" text="SIZE" />
+        </columns>
+      </TableView>
+      <Button fx:id="dlt_btn" layoutX="227.0" layoutY="260.0" mnemonicParsing="false" onAction="#nextDelete" prefHeight="31.0" prefWidth="146.0" text="DELETE" />
+      <Button fx:id="upd_btn" layoutX="53.0" layoutY="260.0" mnemonicParsing="false" onAction="#nextUpdate" prefHeight="31.0" prefWidth="146.0" text="UPDATE" />
+      <Button fx:id="insrt_btn" layoutX="409.0" layoutY="260.0" mnemonicParsing="false" onAction="#nextInsert" prefHeight="31.0" prefWidth="146.0" text="INSERT" />
+      <Button fx:id="usr_btn" layoutX="28.0" layoutY="21.0" mnemonicParsing="false" onAction="#backUser" prefHeight="31.0" prefWidth="146.0" text="Go To User Page" />
+      <Label fx:id="lbl_ntc" layoutX="574.0" layoutY="26.0" prefHeight="21.0" prefWidth="127.0" text="Label" />
+      <Button fx:id="btn_show" layoutX="195.0" layoutY="21.0" mnemonicParsing="false" onAction="#ShowMyEstate" prefHeight="31.0" prefWidth="104.0" text="SHOW" />
+   </children>
+</AnchorPane>
