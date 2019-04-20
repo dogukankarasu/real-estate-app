@@ -93,7 +93,7 @@ public class register {
     public void next3(ActionEvent event) throws IOException
     {
         ((Node)event.getSource()).getScene().getWindow().hide();
-        Parent p1 = FXMLLoader.load(getClass().getResource("entry.fxml"));
+        Parent p1 = FXMLLoader.load(getClass().getResource("../sample/entry.fxml"));
         Scene scn1 = new Scene(p1);
         stg1.setTitle("entry");
         stg1.setScene(scn1);

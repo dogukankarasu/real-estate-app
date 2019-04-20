@@ -11,6 +11,8 @@ import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.stage.Stage;
+import sample.customer_details;
+import sample.estate_info_details;
 
 import java.io.IOException;
 import java.sql.CallableStatement;

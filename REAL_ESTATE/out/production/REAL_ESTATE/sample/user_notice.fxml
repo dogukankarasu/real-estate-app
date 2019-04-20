@@ -4,11 +4,15 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="435.0" prefWidth="718.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.notice_controller">
+<AnchorPane prefHeight="435.0" prefWidth="722.0" style="-fx-background-color: wite;" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.notice_controller">
    <children>
-      <TableView fx:id="TableProfile2" layoutX="14.0" layoutY="94.0" prefHeight="153.0" prefWidth="681.0">
+      <TableView fx:id="TableProfile2" layoutX="30.0" layoutY="107.0" prefHeight="153.0" prefWidth="672.0">
         <columns>
           <TableColumn fx:id="username" prefWidth="93.0" text="USERNAME" />
           <TableColumn fx:id="estate_id" prefWidth="94.0" text="ESTATE ID" />
@@ -20,11 +24,46 @@
             <TableColumn fx:id="size" prefWidth="61.0" text="SIZE" />
         </columns>
       </TableView>
-      <Button fx:id="dlt_btn" layoutX="227.0" layoutY="260.0" mnemonicParsing="false" onAction="#nextDelete" prefHeight="31.0" prefWidth="146.0" text="DELETE" />
-      <Button fx:id="upd_btn" layoutX="53.0" layoutY="260.0" mnemonicParsing="false" onAction="#nextUpdate" prefHeight="31.0" prefWidth="146.0" text="UPDATE" />
-      <Button fx:id="insrt_btn" layoutX="409.0" layoutY="260.0" mnemonicParsing="false" onAction="#nextInsert" prefHeight="31.0" prefWidth="146.0" text="INSERT" />
-      <Button fx:id="usr_btn" layoutX="28.0" layoutY="21.0" mnemonicParsing="false" onAction="#backUser" prefHeight="31.0" prefWidth="146.0" text="Go To User Page" />
-      <Label fx:id="lbl_ntc" layoutX="574.0" layoutY="26.0" prefHeight="21.0" prefWidth="127.0" text="Label" />
-      <Button fx:id="btn_show" layoutX="195.0" layoutY="21.0" mnemonicParsing="false" onAction="#ShowMyEstate" prefHeight="31.0" prefWidth="104.0" text="SHOW" />
+      <Button fx:id="usr_btn" layoutX="52.0" layoutY="36.0" mnemonicParsing="false" onAction="#backUser" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: white;" />
+      <AnchorPane layoutX="-2.0" layoutY="414.0" prefHeight="20.0" prefWidth="731.0" style="-fx-background-color: #ffde03;" />
+      <AnchorPane layoutX="-2.0" prefHeight="20.0" prefWidth="724.0" style="-fx-background-color: #ffde03;" />
+      <AnchorPane layoutX="1.0" layoutY="9.0" prefHeight="409.0" prefWidth="20.0" style="-fx-background-color: #ffde03;" />
+      <AnchorPane layoutX="712.0" layoutY="1.0" prefHeight="434.0" prefWidth="20.0" style="-fx-background-color: #ffde03;" />
+      <ImageView fitHeight="43.0" fitWidth="49.0" layoutX="56.0" layoutY="40.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../picture/geri.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="btn_show" alignment="CENTER" layoutX="134.0" layoutY="42.0" mnemonicParsing="false" onAction="#ShowMyEstate" prefHeight="39.0" prefWidth="153.0" style="-fx-border-width: 4; -fx-border-color: #ffde03; -fx-background-color: white; -fx-background-radius: 10;" text="SHOW" />
+      <AnchorPane layoutX="512.0" layoutY="40.0" prefHeight="31.0" prefWidth="181.0" style="-fx-background-color: #FFDE03;">
+         <effect>
+            <DropShadow />
+         </effect>
+         <children>
+            <Label fx:id="lbl_ntc" alignment="TOP_CENTER" layoutX="24.0" layoutY="3.0" prefHeight="29.0" prefWidth="134.0" text="Label" textAlignment="CENTER">
+               <font>
+                  <Font name="Segoe UI" size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Button fx:id="upd_btn" alignment="CENTER" layoutX="64.0" layoutY="338.0" mnemonicParsing="false" onAction="#nextUpdate" prefHeight="39.0" prefWidth="153.0" style="-fx-border-width: 4; -fx-border-color: #ffde03; -fx-background-color: white; -fx-background-radius: 10;" text="UPDATE" />
+      <Button fx:id="dlt_btn" alignment="CENTER" layoutX="290.0" layoutY="338.0" mnemonicParsing="false" onAction="#nextDelete" prefHeight="39.0" prefWidth="153.0" style="-fx-border-width: 4; -fx-border-color: #ffde03; -fx-background-color: white; -fx-background-radius: 10;" text="DELETE" />
+      <Button fx:id="insrt_btn" alignment="CENTER" layoutX="512.0" layoutY="338.0" mnemonicParsing="false" onAction="#nextInsert" prefHeight="39.0" prefWidth="153.0" style="-fx-border-width: 4; -fx-border-color: #ffde03; -fx-background-color: white; -fx-background-radius: 10;" text="INSERT" />
+      <ImageView fitHeight="61.0" fitWidth="84.0" layoutX="104.0" layoutY="268.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../picture/indir%20(5).png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="61.0" fitWidth="84.0" layoutX="330.0" layoutY="268.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../picture/images%20(6).png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="61.0" fitWidth="84.0" layoutX="558.0" layoutY="268.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../picture/indir%20(6).png" />
+         </image>
+      </ImageView>
    </children>
 </AnchorPane>

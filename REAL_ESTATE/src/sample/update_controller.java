@@ -1,6 +1,6 @@
 package sample;
 
-import com.mysql.cj.Query;
+
 import connection.conn;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -12,9 +12,7 @@ import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
-import javafx.scene.shape.QuadCurveTo;
 import javafx.stage.Stage;
-
 import javax.swing.*;
 import java.io.IOException;
 import java.sql.*;
@@ -137,7 +135,8 @@ public class update_controller {
                 txt_sz.setText(size);
 
             }
-        } catch (SQLException e ) {
+        }
+        catch (SQLException e ) {
             JOptionPane.showMessageDialog(null, e);
 
         }

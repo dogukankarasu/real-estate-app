@@ -4,20 +4,15 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="400.0" prefWidth="726.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.user_control">
+<AnchorPane prefHeight="366.0" prefWidth="727.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.user_control">
    <children>
-      <Label fx:id="lbl_user" layoutX="193.0" layoutY="17.0" prefHeight="37.0" prefWidth="352.0" text="Label" textFill="#801b1b">
-         <font>
-            <Font name="Dubai Regular" size="24.0" />
-         </font></Label>
-      <Button fx:id="bck4_btn" layoutX="14.0" layoutY="20.0" mnemonicParsing="false" onAction="#back2" prefHeight="31.0" prefWidth="140.0" text="Go To Main Menu" />
-      <Button fx:id="prfl_btn" layoutX="34.0" layoutY="70.0" mnemonicParsing="false" onAction="#ShowMyInformation" prefHeight="31.0" prefWidth="140.0" text="My Profile" />
-      <Button fx:id="ntc_btn" layoutX="222.0" layoutY="70.0" mnemonicParsing="false" onAction="#nextUser" prefHeight="31.0" prefWidth="140.0" text="My Notice" />
-      <Button fx:id="dltact_btn" layoutX="422.0" layoutY="70.0" mnemonicParsing="false" onAction="#DeleteAccount" prefHeight="31.0" prefWidth="140.0" text="Delete Account" />
-      <TableView fx:id="TableProfile" layoutX="34.0" layoutY="123.0" prefHeight="248.0" prefWidth="686.0">
+      <TableView fx:id="TableProfile" layoutX="28.0" layoutY="218.0" prefHeight="97.0" prefWidth="671.0">
         <columns>
           <TableColumn fx:id="user_id" prefWidth="75.0" text="ID" />
           <TableColumn fx:id="name" prefWidth="75.0" text="NAME" />
@@ -28,5 +23,48 @@
             <TableColumn fx:id="phone_number" prefWidth="146.0" text="PHONE" />
         </columns>
       </TableView>
+      <Button fx:id="bck4_btn" layoutX="28.0" layoutY="38.0" mnemonicParsing="false" onAction="#back2" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: white;">
+         <graphic>
+            <ImageView fitHeight="43.0" fitWidth="49.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../picture/geri.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <AnchorPane prefHeight="18.0" prefWidth="726.0" style="-fx-background-color: #ffde03;" />
+      <AnchorPane layoutX="5.0" layoutY="348.0" prefHeight="18.0" prefWidth="733.0" style="-fx-background-color: #ffde03;" />
+      <AnchorPane layoutX="-3.0" layoutY="3.0" prefHeight="354.0" prefWidth="20.0" style="-fx-background-color: #ffde03;" />
+      <AnchorPane layoutX="724.0" layoutY="-3.0" prefHeight="366.0" prefWidth="20.0" style="-fx-background-color: #ffde03;" />
+      <Button fx:id="prfl_btn" alignment="CENTER" layoutX="60.0" layoutY="169.0" mnemonicParsing="false" onAction="#ShowMyInformation" prefHeight="39.0" prefWidth="153.0" style="-fx-border-width: 4; -fx-border-color: #ffde03; -fx-background-color: white; -fx-background-radius: 10;" text="MY PROFILE" />
+      <Button fx:id="ntc_btn" alignment="CENTER" layoutX="280.0" layoutY="169.0" mnemonicParsing="false" onAction="#nextUser" prefHeight="39.0" prefWidth="153.0" style="-fx-border-width: 4; -fx-border-color: #ffde03; -fx-background-color: white; -fx-background-radius: 10;" text="MY NOTICE" />
+      <Button fx:id="dltact_btn" alignment="CENTER" layoutX="499.0" layoutY="169.0" mnemonicParsing="false" onAction="#DeleteAccount" prefHeight="39.0" prefWidth="153.0" style="-fx-border-width: 4; -fx-border-color: #ffde03; -fx-background-color: white; -fx-background-radius: 10;" text="DELETE ACCOUNT" />
+      <ImageView fitHeight="53.0" fitWidth="84.0" layoutX="110.0" layoutY="99.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../picture/indir%20(2).png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="53.0" fitWidth="84.0" layoutX="330.0" layoutY="99.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../picture/indir%20(3).png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="53.0" fitWidth="84.0" layoutX="549.0" layoutY="99.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../picture/indir%20(4).png" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="529.0" layoutY="29.0" prefHeight="31.0" prefWidth="181.0" style="-fx-background-color: #FFDE03;">
+         <effect>
+            <DropShadow />
+         </effect>
+         <children>
+            <Label fx:id="lbl_user" alignment="TOP_CENTER" layoutX="14.0" layoutY="8.0" prefHeight="44.0" prefWidth="141.0" text="Label" textAlignment="CENTER">
+               <font>
+                  <Font name="Segoe UI" size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
    </children>
 </AnchorPane>

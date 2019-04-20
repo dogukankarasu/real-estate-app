@@ -1,19 +1,46 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
-<?import javafx.scene.control.Label?>
 <?import javafx.scene.control.PasswordField?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+<AnchorPane prefHeight="419.0" prefWidth="378.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
     <children>
-        <TextField fx:id="Username" layoutX="223.0" layoutY="139.0" />
-        <Button fx:id="lgn_btn" layoutX="223.0" layoutY="245.0" mnemonicParsing="false"  text="Login" />
-        <Label layoutX="124.0" layoutY="144.0" text="Username :" />
-        <Label layoutX="126.0" layoutY="200.0" text="Password :" />
-        <Button fx:id="bck3_btn" layoutX="19.0" layoutY="20.0" mnemonicParsing="false" onAction="#back" text="Go To Main Menu" />
-      <PasswordField fx:id="Password" layoutX="223.0" layoutY="195.0" />
+        <TextField fx:id="Username" layoutX="120.0" layoutY="187.0" promptText="USERNAME" />
+       
+        <PasswordField fx:id="Password" layoutX="120.0" layoutY="247.0" promptText="PASSWORD" />
+      <Button fx:id="bck3_btn" layoutX="41.0" layoutY="31.0" mnemonicParsing="false" onAction="#back" prefHeight="39.0" prefWidth="52.0" style="-fx-background-color: white;">
+         <graphic>
+            <ImageView fitHeight="43.0" fitWidth="49.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../picture/geri.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <AnchorPane layoutX="-3.0" prefHeight="20.0" prefWidth="381.0" style="-fx-background-color: #ffde03;" />
+      <AnchorPane layoutY="405.0" prefHeight="20.0" prefWidth="378.0" style="-fx-background-color: #ffde03;" />
+      <AnchorPane layoutX="358.0" layoutY="20.0" prefHeight="396.0" prefWidth="20.0" style="-fx-background-color: #ffde03;" />
+      <AnchorPane layoutX="-3.0" layoutY="20.0" prefHeight="396.0" prefWidth="20.0" style="-fx-background-color: #ffde03;" />
+      <Button fx:id="lgn_btn" alignment="CENTER" layoutX="132.0" layoutY="333.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="114.0" style="-fx-border-width: 4; -fx-border-color: #ffde03; -fx-background-color: white; -fx-background-radius: 10;" text="LOGIN" />
+      <ImageView fitHeight="31.0" fitWidth="42.0" layoutX="73.0" layoutY="187.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../picture/user.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="31.0" fitWidth="42.0" layoutX="73.0" layoutY="247.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../picture/indir.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="123.0" fitWidth="130.0" layoutX="128.0" layoutY="38.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../picture/images%20(2).png" />
+         </image>
+      </ImageView>
     </children>
 
 </AnchorPane>

@@ -3,15 +3,45 @@
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.delete_controller">
+<AnchorPane prefHeight="406.0" prefWidth="397.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.delete_controller">
    <children>
-      <Button layoutX="30.0" layoutY="37.0" mnemonicParsing="false" onAction="#gotouserscreen" prefHeight="31.0" prefWidth="150.0" text="Go To User Page" />
-      <Label fx:id="lbl_dlt" layoutX="247.0" layoutY="42.0" prefHeight="21.0" prefWidth="58.0" text="Label" />
-      <Label layoutX="30.0" layoutY="155.0" prefHeight="21.0" prefWidth="340.0" text="please enter the ID you want to delete" />
-      <Label layoutX="43.0" layoutY="213.0" prefHeight="21.0" prefWidth="68.0" text="ID:" />
-      <TextField fx:id="text_delete" layoutX="87.0" layoutY="208.0" />
-      <Button layoutX="79.0" layoutY="271.0" mnemonicParsing="false" onAction="#DeleteEstate" prefHeight="31.0" prefWidth="125.0" text="DELETE" />
+      <Label layoutX="80.0" layoutY="203.0" prefHeight="21.0" prefWidth="286.0" text="Please Enter The ID You Want To Delete" />
+      <TextField fx:id="text_delete" layoutX="80.0" layoutY="242.0" promptText="ENTER ID" />
+      <Button layoutX="42.0" layoutY="38.0" mnemonicParsing="false" onAction="#gotouserscreen" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: white;">
+         <graphic>
+            <ImageView fitHeight="43.0" fitWidth="49.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../picture/geri.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <AnchorPane layoutX="-3.0" prefHeight="20.0" prefWidth="397.0" style="-fx-background-color: #ffde03;" />
+      <AnchorPane layoutX="2.0" layoutY="386.0" prefHeight="20.0" prefWidth="397.0" style="-fx-background-color: #ffde03;" />
+      <AnchorPane layoutX="384.0" prefHeight="406.0" prefWidth="20.0" style="-fx-background-color: #ffde03;" />
+      <AnchorPane layoutX="-3.0" prefHeight="406.0" prefWidth="20.0" style="-fx-background-color: #ffde03;" />
+      <AnchorPane layoutX="184.0" layoutY="38.0" prefHeight="31.0" prefWidth="180.0" style="-fx-background-color: #FFDE03;">
+         <effect>
+            <DropShadow />
+         </effect>
+         <children>
+            <Label fx:id="lbl_dlt" alignment="TOP_CENTER" layoutX="14.0" layoutY="4.0" prefHeight="21.0" prefWidth="153.0" text="Label">
+               <font>
+                  <Font name="Segoe UI" size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Button alignment="CENTER" layoutX="80.0" layoutY="294.0" mnemonicParsing="false" onAction="#DeleteEstate" prefHeight="39.0" prefWidth="122.0" style="-fx-border-width: 4; -fx-border-color: #ffde03; -fx-background-color: white; -fx-background-radius: 10;" text="DELETE" />
+      <ImageView fitHeight="88.0" fitWidth="111.0" layoutX="158.0" layoutY="100.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../picture/images%20(7).png" />
+         </image>
+      </ImageView>
    </children>
 </AnchorPane>
