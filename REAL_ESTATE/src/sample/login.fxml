@@ -29,5 +29,6 @@
          </font>
       </Label>
       <Button fx:id="real_btn" layoutX="127.0" layoutY="231.0" mnemonicParsing="false" onAction="#next2" prefHeight="44.0" prefWidth="146.0" style="-fx-border-width: 4; -fx-border-color: #ffde03; -fx-background-color: white; -fx-background-radius: 10;" text="Esate Agent Entry" />
+      <Button fx:id="real_btn" layoutX="127.0" layoutY="281.0" mnemonicParsing="false" onAction="#next3" prefHeight="44.0" prefWidth="146.0" style="-fx-border-width: 4; -fx-border-color: #ffde03; -fx-background-color: white; -fx-background-radius: 10;" text="ADMIN" />
    </children>
 </AnchorPane>

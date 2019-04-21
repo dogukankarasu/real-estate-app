@@ -152,6 +152,9 @@ public class user_control implements Initializable {
         String sql = "DELETE FROM  register1 WHERE username='"+lbl_user.getText()+"' ";
         Statement statement = conn.createStatement();
         statement.execute(sql);
+        String sql1 = "DELETE FROM  estate1 WHERE username='"+lbl_user.getText()+"' ";
+        Statement statement1 = conn.createStatement();
+        statement1.execute(sql1);
 
         ((Node) event.getSource()).getScene().getWindow().hide();
         Parent p1 = FXMLLoader.load(getClass().getResource("login.fxml"));

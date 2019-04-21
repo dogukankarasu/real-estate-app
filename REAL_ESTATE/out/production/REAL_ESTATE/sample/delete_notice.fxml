@@ -25,7 +25,7 @@
       <AnchorPane layoutX="2.0" layoutY="386.0" prefHeight="20.0" prefWidth="397.0" style="-fx-background-color: #ffde03;" />
       <AnchorPane layoutX="384.0" prefHeight="406.0" prefWidth="20.0" style="-fx-background-color: #ffde03;" />
       <AnchorPane layoutX="-3.0" prefHeight="406.0" prefWidth="20.0" style="-fx-background-color: #ffde03;" />
-      <AnchorPane layoutX="184.0" layoutY="38.0" prefHeight="31.0" prefWidth="181.0" style="-fx-background-color: #FFDE03;">
+      <AnchorPane layoutX="184.0" layoutY="38.0" prefHeight="31.0" prefWidth="180.0" style="-fx-background-color: #FFDE03;">
          <effect>
             <DropShadow />
          </effect>

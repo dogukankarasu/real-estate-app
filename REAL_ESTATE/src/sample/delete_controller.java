@@ -69,7 +69,7 @@ public class delete_controller {
 
         Alert alert = new Alert(Alert.AlertType.INFORMATION);
         alert.setTitle("");
-        alert.setHeaderText("You have successfully signed in!");
+        alert.setHeaderText("Successfully Deleted!");
         alert.setContentText(" Please click to button for continue .");
 
         alert.showAndWait();

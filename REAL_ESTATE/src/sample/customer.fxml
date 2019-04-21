@@ -14,7 +14,7 @@
    <children>
       <TableView fx:id="TableProfile3" layoutX="32.0" layoutY="134.0" prefHeight="212.0" prefWidth="859.0" style=": ;">
         <columns>
-          <TableColumn fx:id="username" prefWidth="145.0" style="-fx background color: white;" text="ESTATE USERNAME" />
+          <TableColumn fx:id="username" prefWidth="145.0" style="-fx background color: white;" text="AGENT USERNAME" />
             <TableColumn fx:id="estate_id" prefWidth="106.0" text="ESTATE ID" />
             <TableColumn fx:id="category" prefWidth="110.0" text="CATEGORY" />
             <TableColumn fx:id="type" prefWidth="100.0" text="TYPE" />

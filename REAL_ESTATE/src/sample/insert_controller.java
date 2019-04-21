@@ -85,7 +85,7 @@ public class insert_controller {
 
             Alert alert = new Alert(Alert.AlertType.INFORMATION);
             alert.setTitle("");
-            alert.setHeaderText("You have successfully signed in!");
+            alert.setHeaderText("Successfully Inserted!");
             alert.setContentText(" Please click to button for continue .");
 
             alert.showAndWait();
